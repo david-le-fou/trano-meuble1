@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html class="no-js " lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+<title>Trano Meublé | Admin::Ajout Utilisateur</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+<link rel="manifest" href="../images/favicon/site.webmanifest">
+<link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    
+    
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/plugins/dropzone/dropzone.css">
+    
+    <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+    <!-- Bootstrap Select Css -->
+<link rel="stylesheet" href="assets/plugins/bootstrap-select/css/bootstrap-select.css" />
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/color_skins.css">
+</head>
+<body class="theme-blue">
+
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="col-12">        
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="index.html"><img src="../images/tm-logo/logo1.png" width="30" alt="Compass"><span class="m-l-10">Trano Meublé</span></a>
+        </div>
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <div class="menu">
+        <ul class="list">
+            <li>
+                <div class="user-info">
+                    <div class="image"><a href="profile.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                    <div class="detail">
+                        <h4>Michael</h4>
+                        <small>Agent</small>                        
+                    </div>
+                    <a href="sign-in.html" title="Sign out"><i class="zmdi zmdi-power"></i></a>
+                </div>
+            </li>
+            <li class="active open"><a href="dashboard.html"><i class="zmdi zmdi-home"></i><span>Tableau de bord</span></a></li>            
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Propriétés</span> </a>
+                <ul class="ml-menu">
+                    <li><a href="property-list.html">Liste des Propriétés</a></li>
+                    <li><a href="add-property.html">Ajout de Propriété</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Quartier</span> </a>
+                <ul class="ml-menu">
+                    <li><a href="quart-list.html">Liste</a></li>
+                    <li><a href="add-quart.html">Ajout</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Sociétés</span> </a>
+                <ul class="ml-menu">
+                    <li><a href="societe-list.html">Liste</a></li>
+                    <li><a href="add-societe.html">Ajout</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city"></i><span>Utilisateurs</span> </a>
+                <ul class="ml-menu">
+                    <li><a href="user-list.html">Liste</a></li>
+                    <li><a href="add-user.html">Ajout</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+
+<!-- Main Content -->
+<section class="content home">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <h2>Ajout d'Utilisateur
+                
+                </h2>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="dashboard.html"><i class="zmdi zmdi-home"></i> Administration</a></li>
+                    <li class="breadcrumb-item"><a href="user-list.html">Utilisateur</a></li>
+                    <li class="breadcrumb-item active">Ajout d'utilisateur</li>
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="header">
+                        <h2> Information Utilisateur</h2>
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="nom">Nom de l'utilisateur</label>
+                                    <input type="text" name="pro_titre" id="pro_titre" class="form-control" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="text" name="pro_qua_id" id="pro_qua_id"  class="form-control" placeholder="E-mail">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="identifiant">Identifiant</label>
+                                    <input type="text" name="pro_qua_id" id="pro_qua_id"  class="form-control" placeholder="Identifiant">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="miafina">Mot de passe</label>
+                                    <input type="text" name="pro_qua_id" id="pro_qua_id"  class="form-control" placeholder="Mot de passe">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary btn-round">Ajouter utilisateur</button>
+                            <button type="reset" class="btn btn-default btn-round btn-simple">Annuler</button>
+                        </div>
+                    </div>
+                </div> <!-- /basic -->
+                
+            </div>
+                       
+        </div>
+               
+    </div>
+</section>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- slimscroll, waves Scripts Plugin Js -->
+    
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+
+</body>
+</html>
