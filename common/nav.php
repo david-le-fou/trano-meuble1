@@ -1,3 +1,6 @@
+<?php 
+include 'data-menu.php';
+?>
 <div class="top">
     	<div class="container">
     		<div class="row d-flex align-items-center">
@@ -29,9 +32,14 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
-	          <li class="nav-item"><a href="property.html" class="nav-link">Propriétés</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			  <?php
+			 	foreach($data as $v) {
+					$active = isset($v[2])?'active':'';
+					$url = $v[1];
+					$nom_menu = $v[0];
+					echo "<li class=\"nav-item $active\"><a href=\"$url\" class=\"nav-link\">$nom_menu</a></li>";
+				}
+			  ?>
 	        </ul>
 	      </div>
 	    </div>

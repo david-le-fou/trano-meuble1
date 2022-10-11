@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿<?php
+include 'connect.php';
+
+?><!doctype html>
 <html class="no-js " lang="en">
 <head>
 <meta charset="utf-8">
@@ -24,7 +27,7 @@
     <div class="container">
         <div class="col-md-12 content-center">
             <div class="card-plain">
-                <form class="form" method="" action="">
+                <form class="form" method="post" action="<?= $_SERVER['PHP_SELF']?>">
                     <div class="header">
                         <div class="logo-container">
                             <img src="../images/tm-logo/trano-meuble.png" alt="Trano Meublé">
@@ -33,20 +36,21 @@
                     </div>
                     <div class="content">                                                
                         <div class="input-group input-lg">
-                            <input type="text" class="form-control" placeholder="Identifiant">
+                            <input type="text" class="form-control" placeholder="Identifiant" name='identifiant'>
                             <span class="input-group-addon">
                                 <i class="zmdi zmdi-account-circle"></i>
                             </span>
                         </div>
                         <div class="input-group input-lg">
-                            <input type="password" placeholder="Mot de passe" class="form-control" />
+                            <input type="password" placeholder="Mot de passe" class="form-control" name='password'/>
                             <span class="input-group-addon">
                                 <i class="zmdi zmdi-lock"></i>
                             </span>
                         </div>
                     </div>
                     <div class="footer text-center">
-                        <a href="dashboard.html" class="btn l-cyan btn-round btn-lg btn-block waves-effect waves-light">Entrer</a>
+                        <!-- <a href="dashboard.html" class="btn l-cyan btn-round btn-lg btn-block waves-effect waves-light">Entrer</a> -->
+                        <button class="btn l-cyan btn-round btn-lg btn-block waves-effect waves-light">Entrer</button>
                         <h6 class="m-t-20"><a href="forgot-password.html" class="link">Mot de passe oublié?</a></h6>
                     </div>
                 </form>

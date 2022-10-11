@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html class="no-js " lang="en">
 <head>
 <meta charset="utf-8">
@@ -25,7 +26,7 @@
         </div>
         
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
+            <li><a href="logout.php" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a></li>
         </ul>
     </div>
 </nav>
